@@ -19,15 +19,18 @@ With this dictionary/text file, it is easy to generate stats and word lists of i
 
 # Number of total acceptable words
 > wc -l enable1.txt
-173098
+
+> 173098
 
 # Number of 2 letter words
 > perl -lne 'print if length $_ == 2' enable1.txt | wc -l
-105
+
+> 105
 
 # Number of 3 letter words
 > perl -lne 'print if length $_ == 3' enable1.txt | wc -l
-992
+
+> 992
 
 # Collect the 2 letter words in a file called 2.txt to learn later
 > perl -lne 'print if length $_ == 2' enable1.txt > 2.txt
